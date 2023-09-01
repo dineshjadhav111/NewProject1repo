@@ -34,16 +34,16 @@ public class AutoComplete {
 		
 		Thread.sleep(2000);
 
-		for(WebElement l : list)
-		{
-			if(l.getText().equals("tata salt"))
-			{
-				l.click();
-				break;
-			}
-		}
+//		for(WebElement l : list)
+//		{
+//			if(l.getText().equals("tata salt"))
+//			{
+//				l.click();
+//				break;
+//			}
+//		}
 		
-			//list.get(0).click();	
+			list.get(0).click();	
 	}
 
 }
