@@ -16,10 +16,13 @@ public class AutoComplete {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriverManager.firefoxdriver().setup();
 		WebDriverManager.firefoxdriver().setup();
-		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver = new FirefoxDriver();
+		
 		//WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().window().maximize();
+		driver.manage().window().maximize();
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.get("https://www.amazon.in/");
