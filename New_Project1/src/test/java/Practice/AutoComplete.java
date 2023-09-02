@@ -30,20 +30,25 @@ public class AutoComplete {
 		
 		Thread.sleep(2000);
 		
-		List<WebElement> list = driver.findElements(By.xpath("//div[@id='nav-flyout-iss-anchor']//following::div[starts-with(@class,'left')]"));
-		
-		Thread.sleep(2000);
+		//List<WebElement> list = driver.findElements(By.xpath("//div[@id='nav-flyout-iss-anchor']//following::div[contains(@class,'left')]"));
+		List<WebElement> list = driver.findElements(By.xpath("//div[@id='nav-flyout-iss-anchor']//following::div[contains(@class,'s-suggestion-container')]"));
 
-//		for(WebElement l : list)
-//		{
-//			if(l.getText().equals("tata salt"))
-//			{
-//				l.click();
-//				break;
-//			}
-//		}
+		Thread.sleep(5000);
+
+		for(WebElement l : list)
+		{
+			if(l.getText().equals("tata coffee"))
+			{
+				l.click();
+				break;
+			}
+		}
 		
-			list.get(0).click();	
+		//	list.get(6).click();	
+		
+//==============================================================================================================================//	
+//==============================================================================================================================//		
+		
 	}
 
 }
